@@ -28,13 +28,13 @@ export const PokemonScreen = ({navigation, route}: Props) => {
 
   return (
     <View style={{flex: 1}}>
-      {/* Heade Containerr */}
+
       <View
         style={{
           ...styles.headerContainer,
           backgroundColor: color,
         }}>
-        {/* Backbutton */}
+
         <TouchableOpacity
           onPress={() => navigation.pop()}
           activeOpacity={0.8}
@@ -45,7 +45,6 @@ export const PokemonScreen = ({navigation, route}: Props) => {
           <Icon name="arrow-back-outline" color="white" size={35} />
         </TouchableOpacity>
 
-        {/* Nombre del Pokemon */}
         <Text
           style={{
             ...styles.pokemonName,
@@ -54,7 +53,6 @@ export const PokemonScreen = ({navigation, route}: Props) => {
           {name + '\n'}#{id}
         </Text>
 
-        {/* Pokebola blanca */}
         <Image
           source={require('../assets/pokebola-branca.png')}
           style={styles.pokeball}
@@ -63,7 +61,6 @@ export const PokemonScreen = ({navigation, route}: Props) => {
         <FadeInImage uri={picture} style={styles.pokemonImage} />
       </View>
 
-      {/* Detalles y Loading */}
       {isLoading ? (
         <View style={styles.loadingIndicator}>
           <ActivityIndicator color={color} size={50} />

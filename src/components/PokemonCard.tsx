@@ -54,7 +54,7 @@ export const PokemonCard = ({pokemon}: Props) => {
           width: windowWidth * 0.4,
           backgroundColor: bgColor,
         }}>
-        {/* Nombre del pokemon y ID */}
+          
         <View>
           <Text style={styles.name}>
             {pokemon.name}

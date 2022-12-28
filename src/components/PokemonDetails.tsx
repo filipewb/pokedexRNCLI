@@ -15,7 +15,7 @@ export const PokemonDetails = ({pokemon}: Props) => {
       style={{
         ...StyleSheet.absoluteFillObject,
       }}>
-      {/* Types y peso */}
+
       <View
         style={{
           ...styles.container,
@@ -35,18 +35,15 @@ export const PokemonDetails = ({pokemon}: Props) => {
           ))}
         </View>
 
-        {/* Peso */}
         <Text style={styles.title}>Peso</Text>
         <Text style={styles.regularText}>{pokemon.weight}kg</Text>
       </View>
 
-      {/* Types */}
       <View style={styles.container}>
         <Text style={styles.title}>Sprites</Text>
       </View>
 
       <ScrollView
-        // style
         horizontal={true}
         showsHorizontalScrollIndicator={false}>
         <FadeInImage
@@ -70,7 +67,6 @@ export const PokemonDetails = ({pokemon}: Props) => {
         />
       </ScrollView>
 
-      {/* Habilidades */}
       <View style={styles.container}>
         <Text style={styles.title}>Habilidades base</Text>
         <View style={{flexDirection: 'row'}}>
@@ -87,7 +83,6 @@ export const PokemonDetails = ({pokemon}: Props) => {
         </View>
       </View>
 
-      {/* Habilidades */}
       <View style={styles.container}>
         <Text style={styles.title}>Movimientos</Text>
         <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
@@ -104,7 +99,6 @@ export const PokemonDetails = ({pokemon}: Props) => {
         </View>
       </View>
 
-      {/* Stats */}
       <View style={styles.container}>
         <Text style={styles.title}>Stats</Text>
         <View>
@@ -131,7 +125,6 @@ export const PokemonDetails = ({pokemon}: Props) => {
           ))}
         </View>
 
-        {/* Sprite final */}
         <View
           style={{
             marginBottom: 20,
