@@ -17,12 +17,12 @@ export const Tabs = () => {
         sceneContainerStyle={{
             backgroundColor: 'white'
         }}
-        tabBarOptions={{
-            activeTintColor: '#5856D6',
-            labelStyle: {
+        screenOptions={{
+            tabBarActiveTintColor: '#5856D6',
+            tabBarLabelStyle: {
                 marginBottom: ( Platform.OS === 'ios' ) ? 0 : 10
             },
-            style: {
+            tabBarStyle: {
                 position: 'absolute',
                 backgroundColor: 'rgba(255,255,255, 0.92)',
                 borderWidth: 0,
@@ -32,7 +32,7 @@ export const Tabs = () => {
         }}
     >
       <Tab.Screen 
-        name="HomeScreen" 
+        name="Tab1" 
         component={ Tab1 }
         options={{
             tabBarLabel: "Listado",
