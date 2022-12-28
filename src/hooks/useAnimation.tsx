@@ -40,7 +40,6 @@ export const useAnimation = () => {
                 toValue: 0,
                 duration,
                 useNativeDriver: true,
-                // easing: Easing.bounce
             }
         ).start();
     }

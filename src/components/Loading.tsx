@@ -8,7 +8,7 @@ export const Loading = () => {
                 size={ 50 }
                 color="grey"
             />
-            <Text>Cargando...</Text>
+            <Text>Carregando...</Text>
         </View>
     )
 }

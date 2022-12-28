@@ -56,7 +56,7 @@ export const PokemonScreen = ( { navigation, route }: Props) => {
 
                 {/* Pokebola blanca */}
                 <Image
-                    source={ require('../assets/pokebola-blanca.png') }
+                    source={ require('../assets/pokebola-branca.png') }
                     style={ styles.pokeball }
                 />
 

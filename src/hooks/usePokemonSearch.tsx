@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { pokemonApi } from '../api/pokemonApi';
+import pokemonApi from '../api/pokemonApi';
 
 import { PokemonPaginatedResponse, SimplePokemon, Result } from '../interfaces/pokemonInterfaces';
 
@@ -11,7 +11,7 @@ export const usePokemonSearch = () => {
     
     const loadPokemons = async() => {
 
-        const resp = await pokemonApi.get<PokemonPaginatedResponse>( 'https://pokeapi.co/api/v2/pokemon?limit=1200' );
+        const resp = await pokemonApi.get<PokemonPaginatedResponse>( '/pokemon?limit=1200' );
         mapPokemonList( resp.data.results ) ;
     }
 

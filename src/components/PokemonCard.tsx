@@ -1,4 +1,4 @@
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation } from '@react-navigation/native';
 import React, { useEffect, useRef, useState } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet, Dimensions, Image } from 'react-native';
 
@@ -64,7 +64,7 @@ export const PokemonCard = ({ pokemon }: Props ) => {
 
                 <View style={ styles.pokebolaContainer }>
                     <Image 
-                        source={ require('../assets/pokebola-blanca.png') }
+                        source={ require('../assets/pokebola-branca.png') }
                         style={ styles.pokebola }
                     />
                 </View>
@@ -83,7 +83,6 @@ export const PokemonCard = ({ pokemon }: Props ) => {
 const styles = StyleSheet.create({
     cardContainer: {
         marginHorizontal: 10,
-        // backgroundColor: 'grey',
         height: 120,
         width: 160,
         marginBottom: 25,

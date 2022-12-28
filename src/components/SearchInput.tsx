@@ -53,7 +53,7 @@ export const SearchInput = ({ style, onDebounce }:Props) => {
 
 const styles = StyleSheet.create({
     container: {
-        // backgroundColor: 'red'
+        
     },
     textBackground: {
         backgroundColor: '#F3F1F3',
